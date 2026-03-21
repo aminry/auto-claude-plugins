@@ -3,7 +3,9 @@
     "allow": [
       "WebFetch(domain:www.claudepluginhub.com)",
       "Bash(mkdir -p auto-improve/.claude-plugin)",
-      "Bash(mv commands:*)"
+      "Bash(mv commands:*)",
+      "Bash(gh api:*)",
+      "Bash(git rm:*)"
     ]
   }
 }
