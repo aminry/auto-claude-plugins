@@ -1,6 +1,6 @@
 {
   "name": "auto-improve",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creates custom auto-improve loops for any feature in any codebase — analyzes features, builds evaluation rubrics, and generates autonomous iterative improvement skills",
   "author": {
     "name": "Amin Roudaki",

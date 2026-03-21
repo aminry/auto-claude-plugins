@@ -9,7 +9,7 @@
       "name": "auto-improve",
       "source": "./.claude-plugin/plugins/auto-improve",
       "description": "Creates custom auto-improve loops for any feature in any codebase — analyzes features, builds evaluation rubrics, and generates autonomous iterative improvement skills",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Amin Roudaki"
       }

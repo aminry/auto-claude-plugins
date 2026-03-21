@@ -19,7 +19,7 @@ A marketplace of Claude Code plugins for automation, quality, and productivity.
 
 | Plugin | Description | Version |
 |--------|-------------|---------|
-| [auto-improve](./.claude-plugin/plugins/auto-improve/) | Creates custom auto-improve loops for any feature — builds evaluation rubrics and generates autonomous iterative improvement skills | 1.0.0 |
+| [auto-improve](./.claude-plugin/plugins/auto-improve/) | Creates custom auto-improve loops for any feature — builds evaluation rubrics and generates autonomous iterative improvement skills | 1.0.1 |
 
 ## For Teams
 
