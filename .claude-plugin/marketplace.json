@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "auto-improve",
-      "source": "./plugins/auto-improve",
+      "source": "./.claude-plugin/plugins/auto-improve",
       "description": "Creates custom auto-improve loops for any feature in any codebase — analyzes features, builds evaluation rubrics, and generates autonomous iterative improvement skills",
       "version": "1.0.0",
       "author": {
