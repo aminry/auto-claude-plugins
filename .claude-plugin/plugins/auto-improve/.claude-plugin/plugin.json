@@ -1,0 +1,19 @@
+{
+  "name": "auto-improve",
+  "version": "1.0.0",
+  "description": "Creates custom auto-improve loops for any feature in any codebase — analyzes features, builds evaluation rubrics, and generates autonomous iterative improvement skills",
+  "author": {
+    "name": "Amin Roudaki",
+    "url": "https://github.com/aminry"
+  },
+  "repository": "https://github.com/aminry/auto-claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "auto-improve",
+    "evaluation",
+    "rubric",
+    "quality",
+    "automation",
+    "iterative-improvement"
+  ]
+}

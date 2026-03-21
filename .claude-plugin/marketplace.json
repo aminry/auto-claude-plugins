@@ -1,7 +1,18 @@
 {
   "name": "auto-claude-plugins",
-  "version": "1.0.0",
-  "description": "A marketplace of Claude Code plugins for automation, quality, and productivity",
-  "keywords": ["marketplace", "automation", "auto-improve", "quality", "productivity"],
-  "strict": true
+  "owner": {
+    "name": "Amin Roudaki",
+    "url": "https://github.com/aminry"
+  },
+  "plugins": [
+    {
+      "name": "auto-improve",
+      "source": "./plugins/auto-improve",
+      "description": "Creates custom auto-improve loops for any feature in any codebase — analyzes features, builds evaluation rubrics, and generates autonomous iterative improvement skills",
+      "version": "1.0.0",
+      "author": {
+        "name": "Amin Roudaki"
+      }
+    }
+  ]
 }

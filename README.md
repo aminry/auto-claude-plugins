@@ -2,31 +2,42 @@
 
 A marketplace of Claude Code plugins for automation, quality, and productivity.
 
-## Plugins
+## Quick Start
 
-| Plugin | Description | Commands |
-|--------|-------------|----------|
-| [auto-improve](./auto-improve/) | Creates custom auto-improve loops for any feature — builds evaluation rubrics and generates autonomous iterative improvement skills | `/auto-improve:create`, `/auto-improve:evolve-rubric` |
+```bash
+# Add the marketplace
+/plugin marketplace add aminry/auto-claude-plugins
 
-## Installation
+# List available plugins
+/plugin list
 
-Install a specific plugin by adding it to your project's `.claude/settings.json`:
-
-```json
-{
-  "plugins": [
-    "aminry/auto-claude-plugins/auto-improve"
-  ]
-}
+# Install a plugin
+/plugin install auto-improve@auto-claude-plugins
 ```
 
-Or clone locally and point to the plugin path:
+## Available Plugins
+
+| Plugin | Description | Version |
+|--------|-------------|---------|
+| [auto-improve](./.claude-plugin/plugins/auto-improve/) | Creates custom auto-improve loops for any feature — builds evaluation rubrics and generates autonomous iterative improvement skills | 1.0.0 |
+
+## For Teams
+
+Add to your project's `.claude/settings.json` to auto-enable for all team members:
 
 ```json
 {
-  "plugins": [
-    "/path/to/auto-claude-plugins/auto-improve"
-  ]
+  "extraKnownMarketplaces": {
+    "auto-claude-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "aminry/auto-claude-plugins"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "auto-improve@auto-claude-plugins": true
+  }
 }
 ```
 
@@ -35,38 +46,23 @@ Or clone locally and point to the plugin path:
 ```
 auto-claude-plugins/
 ├── .claude-plugin/
-│   └── marketplace.json       # Marketplace manifest
-├── auto-improve/              # Auto-improve factory plugin
-│   ├── .claude-plugin/
-│   │   └── plugin.json        # Plugin manifest
-│   ├── commands/
-│   │   ├── create.md
-│   │   └── evolve-rubric.md
-│   └── README.md
+│   ├── marketplace.json                ← Marketplace catalog
+│   └── plugins/
+│       ├── README.md                   ← Plugin development guide
+│       └── auto-improve/              ← Auto-improve factory plugin
+│           ├── .claude-plugin/
+│           │   └── plugin.json
+│           ├── commands/
+│           │   ├── create.md
+│           │   └── evolve-rubric.md
+│           └── README.md
 ├── README.md
 └── LICENSE
 ```
 
-## Adding a New Plugin
+## Contributing
 
-1. Create a new directory at the repo root with your plugin name
-2. Add `.claude-plugin/plugin.json` with the required manifest fields
-3. Add your `commands/`, `agents/`, `skills/`, or `hooks/` directories
-4. Add a `README.md` documenting the plugin
-5. Update this README's plugin table
-
-### Plugin Manifest Template
-
-```json
-{
-  "name": "my-plugin",
-  "version": "1.0.0",
-  "description": "What this plugin does",
-  "keywords": ["relevant", "keywords"],
-  "strict": true,
-  "commands": ["./commands/my-command.md"]
-}
-```
+See [Plugin Development Guide](./.claude-plugin/plugins/README.md) for instructions on adding new plugins.
 
 ## License
 
