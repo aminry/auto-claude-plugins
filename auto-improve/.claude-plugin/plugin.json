@@ -1,0 +1,8 @@
+{
+  "name": "auto-improve",
+  "version": "1.0.0",
+  "description": "Creates custom auto-improve loops for any feature in any codebase — analyzes features, builds evaluation rubrics, and generates autonomous iterative improvement skills",
+  "keywords": ["auto-improve", "evaluation", "rubric", "quality", "automation", "iterative-improvement"],
+  "strict": true,
+  "commands": ["./commands/create.md", "./commands/evolve-rubric.md"]
+}

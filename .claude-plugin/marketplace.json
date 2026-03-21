@@ -1,0 +1,7 @@
+{
+  "name": "auto-claude-plugins",
+  "version": "1.0.0",
+  "description": "A marketplace of Claude Code plugins for automation, quality, and productivity",
+  "keywords": ["marketplace", "automation", "auto-improve", "quality", "productivity"],
+  "strict": true
+}
