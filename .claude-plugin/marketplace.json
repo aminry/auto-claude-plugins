@@ -13,6 +13,15 @@
       "author": {
         "name": "Amin Roudaki"
       }
+    },
+    {
+      "name": "auto-develop",
+      "source": "./.claude-plugin/plugins/auto-develop",
+      "description": "Creates custom auto-develop loops for any feature in any codebase — analyzes features, builds capability specs, and generates autonomous iterative development skills that add new functionality",
+      "version": "1.0.0",
+      "author": {
+        "name": "Amin Roudaki"
+      }
     }
   ]
 }

@@ -20,6 +20,7 @@ A marketplace of Claude Code plugins for automation, quality, and productivity.
 | Plugin | Description | Version |
 |--------|-------------|---------|
 | [auto-improve](./.claude-plugin/plugins/auto-improve/) | Creates custom auto-improve loops for any feature — builds evaluation rubrics and generates autonomous iterative improvement skills | 1.0.1 |
+| [auto-develop](./.claude-plugin/plugins/auto-develop/) | Creates custom auto-develop loops for any feature — builds capability specs and generates autonomous iterative development skills that add new functionality | 1.0.0 |
 
 ## For Teams
 
@@ -36,7 +37,8 @@ Add to your project's `.claude/settings.json` to auto-enable for all team member
     }
   },
   "enabledPlugins": {
-    "auto-improve@auto-claude-plugins": true
+    "auto-improve@auto-claude-plugins": true,
+    "auto-develop@auto-claude-plugins": true
   }
 }
 ```
@@ -49,12 +51,19 @@ auto-claude-plugins/
 │   ├── marketplace.json                ← Marketplace catalog
 │   └── plugins/
 │       ├── README.md                   ← Plugin development guide
-│       └── auto-improve/              ← Auto-improve factory plugin
+│       ├── auto-improve/              ← Auto-improve factory plugin
+│       │   ├── .claude-plugin/
+│       │   │   └── plugin.json
+│       │   ├── commands/
+│       │   │   ├── create.md
+│       │   │   └── evolve-rubric.md
+│       │   └── README.md
+│       └── auto-develop/              ← Auto-develop factory plugin
 │           ├── .claude-plugin/
 │           │   └── plugin.json
 │           ├── commands/
 │           │   ├── create.md
-│           │   └── evolve-rubric.md
+│           │   └── evolve-spec.md
 │           └── README.md
 ├── README.md
 └── LICENSE

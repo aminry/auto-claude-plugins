@@ -1,0 +1,19 @@
+{
+  "name": "auto-develop",
+  "version": "1.0.0",
+  "description": "Creates custom auto-develop loops for any feature in any codebase — analyzes features, builds capability specs, and generates autonomous iterative development skills that add new functionality",
+  "author": {
+    "name": "Amin Roudaki",
+    "url": "https://github.com/aminry"
+  },
+  "repository": "https://github.com/aminry/auto-claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "auto-develop",
+    "capability",
+    "specification",
+    "feature-development",
+    "automation",
+    "iterative-development"
+  ]
+}
