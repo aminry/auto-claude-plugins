@@ -1,27 +1,37 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "auto-claude-plugins",
   "owner": {
-    "name": "Amin Roudaki",
-    "url": "https://github.com/aminry"
+    "name": "Amin Roudaki"
+  },
+  "metadata": {
+    "description": "Claude Code plugins for autonomous iterative improvement and feature development — auto-improve fixes quality, auto-develop adds new functionality",
+    "pluginRoot": "./plugins"
   },
   "plugins": [
     {
       "name": "auto-improve",
-      "source": "./.claude-plugin/plugins/auto-improve",
+      "source": "./plugins/auto-improve",
       "description": "Creates custom auto-improve loops for any feature in any codebase — analyzes features, builds evaluation rubrics, and generates autonomous iterative improvement skills",
       "version": "1.0.1",
+      "category": "development",
       "author": {
         "name": "Amin Roudaki"
-      }
+      },
+      "keywords": ["auto-improve", "evaluation", "rubric", "quality", "automation", "iterative-improvement"],
+      "tags": ["community-managed"]
     },
     {
       "name": "auto-develop",
-      "source": "./.claude-plugin/plugins/auto-develop",
+      "source": "./plugins/auto-develop",
       "description": "Creates custom auto-develop loops for any feature in any codebase — analyzes features, builds capability specs, and generates autonomous iterative development skills that add new functionality",
       "version": "1.0.0",
+      "category": "development",
       "author": {
         "name": "Amin Roudaki"
-      }
+      },
+      "keywords": ["auto-develop", "capability", "specification", "feature-development", "automation", "iterative-development"],
+      "tags": ["community-managed"]
     }
   ]
 }
