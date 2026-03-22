@@ -88,23 +88,23 @@ Add to your project's `.claude/settings.json` to auto-enable for all team member
 ```
 auto-claude-plugins/
 ├── .claude-plugin/
-│   ├── marketplace.json                ← Marketplace catalog
-│   └── plugins/
-│       ├── README.md                   ← Plugin development guide
-│       ├── auto-improve/              ← Auto-improve factory plugin
-│       │   ├── .claude-plugin/
-│       │   │   └── plugin.json
-│       │   ├── commands/
-│       │   │   ├── create.md
-│       │   │   └── evolve-rubric.md
-│       │   └── README.md
-│       └── auto-develop/              ← Auto-develop factory plugin
-│           ├── .claude-plugin/
-│           │   └── plugin.json
-│           ├── commands/
-│           │   ├── create.md
-│           │   └── evolve-spec.md
-│           └── README.md
+│   └── marketplace.json                ← Marketplace catalog
+├── plugins/
+│   ├── README.md                       ← Plugin development guide
+│   ├── auto-improve/                   ← Auto-improve factory plugin
+│   │   ├── .claude-plugin/
+│   │   │   └── plugin.json
+│   │   ├── commands/
+│   │   │   ├── create.md
+│   │   │   └── evolve-rubric.md
+│   │   └── README.md
+│   └── auto-develop/                   ← Auto-develop factory plugin
+│       ├── .claude-plugin/
+│       │   └── plugin.json
+│       ├── commands/
+│       │   ├── create.md
+│       │   └── evolve-spec.md
+│       └── README.md
 ├── README.md
 └── LICENSE
 ```
