@@ -10,7 +10,15 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(find /Users/amin/repo/auto-claude-plugins -type d -not -path */.*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(git checkout:*)",
+      "Bash(find /Users/amin/repo/auto-claude-plugins/plugins -type f -name *.tsx -o -name *.ts -o -name *.jsx -o -name *.js)",
+      "Bash(gh pr:*)",
+      "mcp__claude_ai_Excalidraw__read_me",
+      "mcp__claude_ai_Excalidraw__create_view",
+      "mcp__claude_ai_Excalidraw__export_to_excalidraw"
     ]
   }
 }
